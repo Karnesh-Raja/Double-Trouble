@@ -1,0 +1,16 @@
+{
+  "name": "agrosense-server",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=22.13" },
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js",
+    "seed": "node scripts/seed.js",
+    "test": "node --no-warnings --test",
+    "verify": "node scripts/verify.js",
+    "smoke": "node scripts/smoke.js"
+  },
+  "dependencies": { "cors": "^2.8.5", "express": "^4.19.2" }
+}
